@@ -14,6 +14,11 @@ void setupLed()
 
 void blinkLed(int delayms, int repeat)
 {
+    Serial.print("Blinking ");
+    Serial.print(repeat);
+    Serial.print(" times every ");
+    Serial.print(delayms);
+    Serial.println(" ms.");
     CRGB color = CRGB::Black;
     switch (random(0,4))
     {

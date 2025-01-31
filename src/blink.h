@@ -10,6 +10,11 @@ void setupLed()
 
 void blinkLed(int delayms, int repeat)
 {
+    Serial.print("Blinking ");
+    Serial.print(repeat);
+    Serial.print(" times every ");
+    Serial.print(delayms);
+    Serial.println(" ms.");
     for (int i = 0; i < repeat; i++)
     {
         digitalWrite (BUILTIN_LED, HIGH);	// turn on the LED
