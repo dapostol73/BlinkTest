@@ -9,7 +9,7 @@ CRGB leds[NUM_LEDS];
 
 void setupLed()
 {
-    FastLED.addLeds<NEOPIXEL, PIN_NEOPIXEL>(leds, NUM_LEDS);
+    FastLED.addLeds<NEOPIXEL, PIN_RGB_LED>(leds, NUM_LEDS);
 }
 
 void blinkLed(int delayms, int repeat)
